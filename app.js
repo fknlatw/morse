@@ -72,7 +72,7 @@ function handleInput(value) {
     }
 
     write(crypted);
-    inputElement.value = ""; 
+    inputElement.value = "";
   }
 }
 
