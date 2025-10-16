@@ -47,7 +47,7 @@ input{
   padding: 0.5em;
   outline: none;
   width: 100%;
-  background: var(--color-surface);
+  background-color: var(--color-surface);
   color: var(--color-text-primary);
   max-width: 170px;
   border: 0.5px solid var(--color-secondary);
@@ -76,10 +76,31 @@ input::placeholder{
   overflow: hidden;
   transition: height 0.7s;
   height: 0;
-  font-size: 2rem;
+  font-size: 1.75rem;
   max-width: 400px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.switcher{
+  color: var(--color-text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  cursor: pointer;
+  background-color: var(--color-surface);
+  border-radius: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--color-secondary);
+}
+
+.type{
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+  border-radius:  0.75rem;
+}
+.type.active{
+  background-color: var(--color-primary);
+}
 .hide{
   height: 0 !important;
 }
@@ -98,8 +119,6 @@ input::placeholder{
   border: 2px solid var(--color-secondary);
   border-top: none;
 }
-
-
 
 .theme__button{
   cursor: pointer;
